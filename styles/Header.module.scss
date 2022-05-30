@@ -1,0 +1,22 @@
+.nav {
+  width: 100%;
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    li {
+      margin-left: 15px;
+      font-size: 1.25rem;
+    }
+  }
+}
+

@@ -1,0 +1,170 @@
+// Hero section
+
+.hero {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .herobg {
+    z-index: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .cta {
+    position: absolute;
+    right: 10rem;
+    z-index: 1;
+    background-color: #eaeaea;
+    padding: 2rem 3rem;
+    h1 {
+      font-size: 2rem;
+    }
+    a {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+// Categories section
+
+.categories {
+  padding: 50px 0;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .categoryItems {
+    display: flex;
+    justify-content: space-between;
+    .categoryItem {
+      // padding: 2rem;
+      margin: 20px;
+      box-shadow: 3px -3px 14px 0 rgb(6 24 63 / 10%);
+      overflow: hidden;
+      position: relative;
+      .categoryBg {
+        position: absolute;
+        z-index: 0;
+        filter: brightness(50%);
+      }
+      .titleWindow {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title {
+          color: #eaeaea;
+        }
+      }
+
+    }
+  }
+}
+
+.featuredQuote {
+  background-image: url("../public/images/wedding-dress-parallax.jpg");
+  width: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .dimmer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .container {
+    width: 1320px;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      max-width: 400px;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.contacts {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  .container {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    .col {
+      width: 50%;
+      height: 600px;
+      .contactDetails {
+        background-image: url("../public/images/ira-koval-contact-info.jpg");
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .dimmer {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background: #000000;
+          opacity: 0.5;
+          z-index: 1;
+        }
+        .text {
+          color: #FFFFFF;
+          position: relative;
+          z-index: 2;
+          padding: 0 0 0 4rem;
+          .contact {
+            margin-bottom: 20px;
+            .eyebrow {
+              display: block;
+            }
+            .contact {
+              font-size: 1.5rem;
+            }
+          }
+
+        }
+
+      }
+      .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.main {
+    h1, p {
+        text-align: center;
+    }
+}
+
+
+.collectionItems {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+
+}
