@@ -7,7 +7,7 @@ export default function Portfolio({ portfolio, featuredMedia }) {
       <Link href={`/portfolio/${portfolio.slug}`}>
         <a>
           <Image
-            src={featuredMedia['media_details'].sizes.full['source_url']}
+            src={featuredMedia['media_details'].sizes.medium['source_url']}
             width={204}
             height={240}
             alt={featuredMedia['alt_text']}
