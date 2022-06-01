@@ -11,7 +11,6 @@ export default function Portfolio({ portfolio, featuredMedia }) {
             width={204}
             height={240}
             alt={featuredMedia['alt_text']}
-            className="card-img-top"
           />
         </a>
       </Link>

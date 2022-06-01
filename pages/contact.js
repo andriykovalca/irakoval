@@ -6,7 +6,9 @@ import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
 
-export default function Contact() {
+
+
+export default function Contact({portfolios}) {
 
   return (
     <div className={styles.container}>
@@ -22,7 +24,8 @@ export default function Contact() {
 
 		<h1>Contact</h1>
 
-		<p>CONTACTS HERE</p>			
+		<p>CONTACTS HERE</p>		
+		
 
 		</main>
 
