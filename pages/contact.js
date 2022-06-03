@@ -4,6 +4,9 @@ import styles from '../styles/Contact.module.scss';
 import Link from 'next/link';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
+import MapIcon from '@mui/icons-material/Map';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
 
 
 
@@ -22,9 +25,35 @@ export default function Contact({portfolios}) {
 		<Header />
 		<main className={styles.main}>
 
-		<h1>Contact</h1>
+		<section className={styles.hero}>
+			<Image 
+				className={styles.herobg}
+				src="/images/contact-wedding-black-white.jpg"
+				alt="Ira Koval Design"
+				layout="fill"
+				objectFit="cover"
+				objectPosition="center"
+			/>
+		  <div className={styles.contacts}>
+			<h1>Contact</h1>
+			<div className={styles.contactDetails}>
+				<div className={styles.detail}>
+					<MapIcon />
+					<p>Heroiv upa street, <br />Lviv, Ukraine</p>
+				</div>
 
-		<p>CONTACTS HERE</p>		
+				<div className={styles.detail}>
+					<LocalPhoneIcon />
+					<p>+38 063 2288 955 <br /> +38 097 4717 423</p>
+				</div>
+
+				<div className={styles.detail}>
+					<MapIcon />
+					<p>contact@irakoval.com</p>
+				</div>
+			</div>
+		</div>
+	</section>	
 		
 
 		</main>

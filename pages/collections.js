@@ -9,8 +9,9 @@ import {getPortfolios} from "./api/portfolios";
 import React, { useState } from 'react';
 import { slice, concat, } from 'lodash';
 
-const LENGTH = 118;
-const LIMIT = 12;
+
+const LENGTH = 50;
+const LIMIT = 6;
 
 export default function Collections({portfolios}) {
 
@@ -20,11 +21,9 @@ export default function Collections({portfolios}) {
 	const [showMore,setShowMore] = useState(true);
 	const [ports,setPorts] = useState(slice(portfolios, 0, LIMIT));
 	const [index,setIndex] = useState(LIMIT);
+	const [loading, setLoading] = useState(false);
 
-	// const jsxPortfolios = ports.map((port) => {
-	// 	const featuredMedia = port['_embedded']['wp:featuredmedia'][0];
-	// 	return <img src={featuredMedia['media_details'].sizes.medium['source_url']} />;
-	// });
+
 
 	const loadMore = () =>{
 		const newIndex = index + LIMIT;
@@ -47,7 +46,7 @@ export default function Collections({portfolios}) {
 		<Header />
 		<main className={styles.main}>
 
-		<h1>Our Collections</h1>
+		<h1>Our Dresses</h1>
 			
 		<div className={styles.collectionItems}>
 			

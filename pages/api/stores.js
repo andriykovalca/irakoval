@@ -26,31 +26,24 @@ async function fetchAPI(query, { variables } = {}) {
   return json.data
 }
 
-export async function getPortfolios(){
+export async function getStores(){
   const data = await fetchAPI(
-      `query portfoliosQuery {
-        portfolios(first: 50) {
-          edges {
-            node {
-              slug
-              title
-              link
-              id
-              featuredImage {
-                node {
-                  altText
-                  fileSize
-                  mediaItemUrl
-                }
+      `query storesQuery {
+          stores(first: 14) {
+            edges {
+              node {
+                content
+                slug
+                storeId
+                title
               }
             }
           }
         }
-      }
     `,
       {
         variables: {},
       }
     );
-  return data?.portfolios?.edges;
+  return data?.stores?.edges;
 }

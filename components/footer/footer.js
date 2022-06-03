@@ -4,15 +4,14 @@ import styles from '../../styles/Footer.module.scss'
 export default function Header () {
     return (
         <footer className={styles.footer}>
-            Created and Designed by
+            Made with ❤️ by
             <a
-                href="https://vertixmedia.com/"
+                href="https://andriykoval.ca/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Website Design Agency
+                 Andriy Koval
             </a>
-            - Vertix Media
 
         </footer>
     )

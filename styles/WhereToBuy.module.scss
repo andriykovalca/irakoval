@@ -2,4 +2,33 @@
     h1,p {
         text-align: center;
     }
+    h1 {
+        margin-bottom: 40px;
+    }
 }
+
+.storeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .storeCard {
+        padding: 40px;
+        background: #FFFFFF;
+        box-shadow: 3px -3px 14px 0 rgb(6 24 63 / 10%);
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        .storeHeading {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-weight: 600;
+        }
+        span p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+    }
+}
+
+
